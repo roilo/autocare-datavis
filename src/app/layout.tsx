@@ -24,9 +24,7 @@ export default function RootLayout({
             attribute="class"
             defaultTheme="system"
         >
-          <main>
-              {children}
-          </main>
+          {children}
       </ThemeProvider>
       </body>
     </html>

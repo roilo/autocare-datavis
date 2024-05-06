@@ -16,7 +16,7 @@ interface Row {
   status: string;
   date: string;
   amount: string;
-  statusVariant: string;
+  statusVariant: any;
 }
 
 interface TabsContent {
@@ -25,7 +25,7 @@ interface TabsContent {
   rows: Row[];
 }
 
-const DashboardComponent: React.FC = () => {
+const RepairOrdersTable: React.FC = () => {
     const [activeTab, setActiveTab] = useState<string>("week");
 
     const tabsContent: Record<string, TabsContent> = {
@@ -133,17 +133,21 @@ const DashboardComponent: React.FC = () => {
         },
     };
 
-    const handleSelectTab = (tab: string) => {
+    const handleClickTab = (tab: string) => {
         setActiveTab(tab);
     };
 
+
+    
     return (
-        <Tabs defaultValue="week" onSelect={handleSelectTab}>
+         
+
+        <Tabs defaultValue="week">
             <div className="flex items-center">
                 <TabsList>
-                    <TabsTrigger value="week">Week</TabsTrigger>
-                    <TabsTrigger value="month">Month</TabsTrigger>
-                    <TabsTrigger value="year">Year</TabsTrigger>
+                    <TabsTrigger value="week" onClick={() => handleClickTab("week")}>Week</TabsTrigger>
+                    <TabsTrigger value="month" onClick={() => handleClickTab("month")}>Month</TabsTrigger>
+                    <TabsTrigger value="year" onClick={() => handleClickTab("year")}>Year</TabsTrigger>
                 </TabsList>
                 <div className="ml-auto flex items-center gap-2">
                     <DropdownMenu>
@@ -208,4 +212,4 @@ const DashboardComponent: React.FC = () => {
     );
 }
 
-export default DashboardComponent;
+export default RepairOrdersTable;

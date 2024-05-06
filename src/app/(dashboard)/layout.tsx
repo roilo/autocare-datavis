@@ -5,18 +5,22 @@ const links =[
   {
     label: 'Home',
     path: '/home',  
+    icon: 'HomeIcon',
   },
   {
     label: 'Repair Orders',
     path: '/repair-orders',
+    icon: 'Wrench',
   },
   {
     label: 'Employees',
     path: '/employees',
+    icon: 'UsersIcon',
   },
   {
     label: 'Calendar',
     path: '/calendar',
+    icon: 'Calendar',
   },
 ]
 
