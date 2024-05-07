@@ -6,7 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { ListFilterIcon, FileIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { RepairOrderCard } from "@/components/component/repairordercard";
+import { RepairOrdersCard } from "@/components/component/RepairOrdersCard";
 import RepairOrdersTable from "@/components/component/RepairOrdersTable";
 
 export default function Home() {
@@ -54,8 +54,7 @@ export default function Home() {
           <RepairOrdersTable />
           
         </div>
-        <RepairOrderCard>
-        </RepairOrderCard>
+        <RepairOrdersCard />
     </main>
   );
 }

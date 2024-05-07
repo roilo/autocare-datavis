@@ -7,7 +7,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Pagination, PaginationContent, PaginationItem } from "../ui/pagination";
 import { Separator } from "../ui/separator";
 
-export function RepairOrderCard(){
+export function EmployeesCard(){
     return (
         <div>
             <Card className="overflow-hidden" x-chunk="dashboard-05-chunk-4">
