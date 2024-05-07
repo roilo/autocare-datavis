@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../ui/breadcrumb";
 import {
     DropdownMenu,
     DropdownMenuContent,
